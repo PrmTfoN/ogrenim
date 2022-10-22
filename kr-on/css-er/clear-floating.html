@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #container {
+            background-color: black;
+            /* float: right; */
+        }
+        
+        .box {
+            float: right;
+            background-color: brown;
+            height: 150px;
+            width: 150px;
+            display: block;
+        }
+        
+        .clearfix::after {
+            clear: both;
+            content: "";
+            display: block;
+        }
+        /* #box1 {
+            float: left;
+        } */
+    </style>
+</head>
+
+<body>
+
+    <div id="container" class="clearfix">
+        <div class="box" id="box1">box 1</div>
+        <div class="box">box 2</div>
+        <div class="box">box 3</div>
+        <!-- <div style="clear: both;"></div> -->
+    </div>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur laboriosam harum consectetur tempore earum, ex voluptas molestias error? Ullam excepturi at quam architecto suscipit sint placeat non, magnam ut dignissimos?
+    </p>
+
+</body>
+
+</html>

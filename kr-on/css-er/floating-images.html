@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        img {
+            width: 300px;
+            /* display: inline-block; */
+            float: left;
+            margin-right: 10px;
+        }
+        
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        
+        p {
+            border: 1px solid gray;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi debitis velit, earum expedita non mollitia possimus. Et illo eos nostrum error, vero voluptatem nobis distinctio ipsum, tempore ipsam minus maxime.
+    </p>
+
+    <p class="clearfix">
+        <img src="/kr-on/css-er/image/rowing.jpeg" alt=""></img>
+        <span>
+            <span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet assumenda, quam voluptatibus quo explicabo est sint libero et quibusdam a, quia ipsum facilis mollitia autem aperiam nihil neque fugiat dignissimos!
+            </span>
+        </span>
+    </p>
+
+</body>
+
+</html>
